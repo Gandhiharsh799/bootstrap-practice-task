@@ -39,17 +39,32 @@
        }
     }
 
-    @media screen and (max-width:560px){
+    @media screen and (max-width:670px){
       .wrapper{
         background-color: white;
       }
+      .cont{
+        display: flex;
+        flex-direction: column;
+        /* border: 2px solid; */
+      }
+      .my-5{
+        margin:0px !important;
+      }
+      .px-5{
+        padding:0px !important;
+      }
+      .container, .container-sm {
+    max-width: 100%;
+}
+      
     }
   </style>
   <body>
     <div class="container-lg my-5 px-5 rounded border wrapper">
-      <div class="container my-5">
+      <div class="container my-5 ">
         <form>
-          <div class="row rounded">
+          <div class="row rounded cont">
             <div class="col bg-white ">
               <h2 class="p-4 head">General Information</h2>
               <div class="form-group">

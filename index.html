@@ -38,13 +38,19 @@
         margin-bottom: 50px;
        }
     }
+
+    @media screen and (max-width:560px){
+      .wrapper{
+        background-color: white;
+      }
+    }
   </style>
   <body>
     <div class="container-lg my-5 px-5 rounded border wrapper">
       <div class="container my-5">
         <form>
           <div class="row rounded">
-            <div class="col bg-white">
+            <div class="col bg-white ">
               <h2 class="p-4 head">General Information</h2>
               <div class="form-group">
                 <div class="input-group p-4">
@@ -55,18 +61,24 @@
                   </select>
                 </div>
 
-                <div class="d-flex flex-row input-group p-4">
-                  <input
+                <div class="row p-4">
+                  <div class="col-md-6">
+                    <input
                     type="text"
-                    class="form-control me-4 rounded border border-black"
+                    class="form-control me-4 rounded border border-black error"
                     placeholder="First Name"
                   />
-                  <input
+                  </div>
+                  <div class="col-md-6">
+                    <input
                     type="text"
-                    class="form-control border-black rounded border"
+                    class="form-control me-4 rounded border border-black"
                     placeholder="Last Name"
                   />
+                  </div>
                 </div>
+
+                
 
                 <div class="input-group p-4">
                   <select class="form-select border-black" id="">
@@ -84,18 +96,24 @@
                   />
                 </div>
 
-                <div class="d-flex flex-row input-group p-4">
+                <div class="row p-4">
+                  <div class="col-md-6">
                   <input
                     type="text"
-                    class="form-control border-black rounded border me-4"
+                    class="form-control border-black rounded border me-4 error"
                     placeholder="Business Arena"
                   />
+                  </div>
+                  <div class="col-md-6">
                   <select class="form-select border-black rounded border">
                     <option value="Employees">Employees</option>
                     <option value="Employees">1-50</option>
                     <option value="Employees">51-100</option>
                   </select>
                 </div>
+                </div>
+
+                
               </div>
             </div>
 

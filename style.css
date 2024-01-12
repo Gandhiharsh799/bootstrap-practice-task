@@ -1,52 +1,58 @@
 .form {
-      background-color: rgb(87, 31, 241);
-    }
-    .wrapper {
-      background-color: lightblue;
-    }
-    .input {
-      background-color: rgb(87, 31, 241);
-    }
+  background-color: rgb(87, 31, 241);
+}
+.wrapper {
+  background-color: lightblue;
+}
+.input {
+  background-color: rgb(87, 31, 241);
+}
 
-    .input::placeholder {
-      color: white;
-    }
-    .head {
-      color: rgb(87, 31, 241);
-    }
-    .box input:focus {
-      background-color: rgb(87, 31, 241);
-      color: white;
-    }
+.input::placeholder {
+  color: white;
+}
+.head {
+  color: rgb(87, 31, 241);
+}
 
-    @media screen and (max-width: 768px) {
-      .error {
-        margin-bottom: 50px;
-      }
-      .wrapper {
-        background-color: lightblue;
-        margin-right: 5px !important;
-        padding: 7px auto !important;
-      }
-      .cont {
-        display: flex;
-        flex-direction: column;
-      }
+.box input:focus {
+  background-color: rgb(87, 31, 241);
+  color: white;
+}
 
-      .size {
-        max-width: 100%;
-      }
-    }
+@media screen and (max-width: 992px) {
+  h2 {
+    font-size: 35px;
+  }
+}
 
-    @media screen and (max-width: 576px) {
-      .wrapper {
-        background-color: white;
-        margin: 0px !important;
-        padding: 0px !important;
-        max-width: 100%;
-      }
-      .cont {
-        display: flex;
-        flex-direction: column;
-      }
-    }
+@media screen and (max-width: 768px) {
+  .wrapper {
+    background-color: lightblue;
+    padding: 7px auto !important;
+    
+  }
+  .error {
+    margin-bottom: 50px;
+  }
+  
+}
+
+@media screen and (max-width: 576px) {
+  .wrapper {
+    background-color: white;
+    margin: 0px !important;
+    padding: 0px !important;
+    max-width: 100%;
+    overflow: hidden;
+  }
+  .cont {
+    display: flex;
+    flex-direction: column;
+  }
+  h2 {
+    font-size: 30px;
+  }
+
+  
+}

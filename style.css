@@ -20,22 +20,14 @@
   color: white;
 }
 
-
-
 @media screen and (max-width: 768px) {
   .wrapper {
     background-color: lightblue;
-    /* padding: 7px auto !important; */
-    
   }
-  
 }
 
 @media screen and (max-width: 576px) {
   .wrapper {
     background-color: white;
-   
   }
-
-  
 }
